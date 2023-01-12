@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formvcss.css">
+</head>
+<body>
+    <div class="start">
+        <div class="container">
+        <h1 style="text-align: center;">REGISTRATION</h1>
+        <table>
+            <form  class="form" action="">
+                <tr>
+                    <td>
+                        <label for="name">NAME :</label>
+                    </td>
+                    <td>    
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                        <p id="nmaes"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">GENDER:</label></td>
+                    <td>
+                      Male: <input type="radio" name="gender" value="male">
+                      Female: <input type="radio" name="gender" value="female">
+                      Other: <input type="radio" name="gender" value="other">
+                    </td>
+                    <p id="gen"></p>
+                  </tr>
+                <tr>
+                    <td>
+                        <label for="place">COUNTRY :</label>
+                    </td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="">Select Country</option>
+                            <option value="India">India</option>
+                            <option value="America">America</option>
+                            <option value="Dubai">Dubai</option>
+                            <option value="Russia">Russia</option>
+    
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="language">LANGUAGE:</label></td>
+                    <td>
+                      <select name="language" id="language">
+                        <option value="">Select language</option>
+                        <option value="English">English</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Arabic">Arabic</option>
+                        <option value="Russian">Russian</option>
+                      </select>
+                    </td>
+                  </tr>
+      
+                <tr>
+                    <td>
+                        <label for="mail">MAIL-ID :</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" placeholder="Enter your mail-id">  
+                        <p id="emailid"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phonenumber">MOBILE NUMBER :</label>
+                        
+                    </td>
+                    <td>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="Enter your number">
+                        <p id="tele"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">PASSWORD :</label>
+                        
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="word" placeholder="Enter your password">
+                        <p id="pass"></p>
+                    </td>
+                </tr>
+          
+                <tr>
+                    <td>
+                        <input type="checkbox" class="ck"  id="checkbox"> 
+                    </td>
+                    <td>
+                        <label for="terms" class="at">Accept terms and conditions</label> 
+                        <!-- <p>Accept terms and conditions </p> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="btn" type="submit" name="submit" value="Login" onclick="return validate()"> 
+                    </td>
+                </tr>
+            </form>
+        </table>    
+     </div>
+    </div>
+</body>
+<script src="./form.js"></script>
+</html>
